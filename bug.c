@@ -1,16 +1,13 @@
-//after modify
 #include <stdio.h>
 #include <string.h>
 
 int main(void) {
-	double i;
+	int i;
 	double j;
 	char *bug = NULL;
 
-	bug = (char *)calloc(3, sizeof(char));
-
 	for(i = 0; i < 5; i++) {
-		printf("loop %d: ", (int)i);
+		printf("loop %d: ", i);
 		j = i/2 + i;
 		printf("\tj is %lf \n", j);
 	}
